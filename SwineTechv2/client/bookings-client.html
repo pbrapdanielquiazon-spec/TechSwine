@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwineTech | Client Table</title>
+  <link rel="stylesheet" href="client.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">🐖 SwineTech</div>
+    <nav>
+      <a href="dashboard-client.html">Dashboard</a>
+      <a href="available-pigs.html" class="active">Available Pigs</a>
+      <a href="lechon-services.html">Lechon Services</a>
+      <a href="bookings-client.html">Bookings</a>
+      <a href="inquiries-client.html">Inquiries</a>
+      <a href="feedback-client.html">Feedback</a>
+      <a href="receipts.html">Receipts</a>
+      <a href="logout.php" class="btn-logout">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+<main class="dashboard">
+  <h1>My Bookings</h1>
+  <button class="btn-add">+ New Booking</button>
+  <table class="admin-table">
+    <thead>
+      <tr>
+        <th>Booking ID</th>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Status</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lechon Package A</td>
+        <td>1</td>
+        <td>Confirmed</td>
+        <td>2025-09-10</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>

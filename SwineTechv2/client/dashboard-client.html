@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwineTech | Client Dashboard</title>
+  <link rel="stylesheet" href="client.css">
+  <link rel="stylesheet" href="admin.css"> <!-- reuse shared styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">🐖 SwineTech</div>
+    <nav>
+      <a href="dashboard-client.html" class="active"><i class="fa-solid fa-house"></i> Dashboard</a>
+      <a href="available-pigs.html"><i class="fa-solid fa-piggy-bank"></i> Available Pigs</a>
+      <a href="lechon-services.html"><i class="fa-solid fa-drumstick-bite"></i> Lechon Services</a>
+      <a href="bookings-client.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a>
+      <a href="inquiries-client.html"><i class="fa-solid fa-envelope"></i> Inquiries</a>
+      <a href="feedback-client.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+      <a href="receipts.html"><i class="fa-solid fa-receipt"></i> Receipts</a>
+      <a href="logout.php" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard">
+    <h1>Welcome, Client!</h1>
+    <div class="dashboard-cards">
+      <div class="card">
+        <h3>My Bookings</h3>
+        <p>2 active reservations</p>
+      </div>
+      <div class="card">
+        <h3>Feedback Submitted</h3>
+        <p>1 feedback</p>
+      </div>
+      <div class="card">
+        <h3>Receipts</h3>
+        <p>2 available</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

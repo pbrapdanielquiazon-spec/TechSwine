@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwineTech | Admin Reports</title>
+  <link rel="stylesheet" href="admin.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">🐖 SwineTech</div>
+    <nav>
+      <a href="dashboard-admin.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+      <a href="manage-users.html"><i class="fa-solid fa-users"></i> Manage Users</a>
+      <a href="pig-records.html"><i class="fa-solid fa-piggy-bank"></i> Pig Records</a>
+      <a href="feeding-schedule.html"><i class="fa-solid fa-bowl-food"></i> Feeding Schedule</a>
+      <a href="health-records-admin.html"><i class="fa-solid fa-notes-medical"></i> Health Records</a>
+      <a href="supplies.html"><i class="fa-solid fa-boxes-stacked"></i> Supplies</a>
+      <a href="expenses.html"><i class="fa-solid fa-money-bill-trend-up"></i> Expenses</a>
+      <a href="sales.html"><i class="fa-solid fa-cash-register"></i> Sales</a>
+      <a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a>
+      <a href="feedback-admin.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+      <a href="inquiries.html"><i class="fa-solid fa-envelope"></i> Inquiries</a>
+      <a href="admin-reports.html" class="active"><i class="fa-solid fa-file-lines"></i> Reports</a>
+      <a href="logout.php" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard">
+    <h1>Admin Reports</h1>
+
+    <!-- Filter Section -->
+    <form class="report-filter">
+      <label for="report-type">Report Type:</label>
+      <select id="report-type" name="report-type">
+        <option value="sales">Sales</option>
+        <option value="expenses">Expenses</option>
+        <option value="bookings">Bookings</option>
+        <option value="supplies">Supplies</option>
+        <option value="health">Health Records</option>
+      </select>
+
+      <label for="date-from">From:</label>
+      <input type="date" id="date-from" name="date-from">
+
+      <label for="date-to">To:</label>
+      <input type="date" id="date-to" name="date-to">
+
+      <button type="submit" class="btn-generate"><i class="fa-solid fa-filter"></i> Generate</button>
+    </form>
+
+    <!-- Report Actions -->
+    <div class="report-actions">
+      <button class="btn-export"><i class="fa-solid fa-file-excel"></i> Export to Excel</button>
+      <button class="btn-pdf"><i class="fa-solid fa-file-pdf"></i> Download PDF</button>
+      <button class="btn-print"><i class="fa-solid fa-print"></i> Print</button>
+    </div>
+
+    <!-- Report Results -->
+    <div class="report-results">
+      <h2><i class="fa-solid fa-chart-line"></i> Report Output</h2>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Details</th>
+            <th>Category</th>
+            <th>Amount / Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5">No data yet. Select filters and click Generate.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

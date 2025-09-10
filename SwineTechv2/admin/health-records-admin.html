@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwineTech | Admin - Health Records</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">🐖 SwineTech</div>
+    <nav>
+      <a href="dashboard-admin.html"><i class="fa-solid fa-chart-pie"></i> Admin Dashboard</a>
+      <a href="manage-users.html"><i class="fa-solid fa-users"></i> Manage Users</a>
+      <a href="pig-records.html"><i class="fa-solid fa-piggy-bank"></i> Pig Records</a>
+      <a href="feeding-schedule.html"><i class="fa-solid fa-bowl-food"></i> Feeding Schedule</a>
+      <a href="health-records-admin.html" class="active"><i class="fa-solid fa-notes-medical"></i> Admin Health Records</a>
+      <a href="supplies.html"><i class="fa-solid fa-boxes-stacked"></i> Supplies</a>
+      <a href="expenses.html"><i class="fa-solid fa-money-bill-trend-up"></i> Expenses</a>
+      <a href="sales.html"><i class="fa-solid fa-cash-register"></i> Sales</a>
+      <a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a>
+      <a href="feedback-admin.html"><i class="fa-solid fa-comment-dots"></i> Feedback</a>
+      <a href="inquiries.html"><i class="fa-solid fa-envelope"></i> Inquiries</a>
+      <a href="admin-reports.html"><i class="fa-solid fa-file-lines"></i> Reports</a>
+      <a href="logout.php" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard">
+    <h1>Admin – Health Records</h1>
+    <p class="page-desc">This section allows <strong>Admins</strong> to oversee and manage pig health logs submitted by Caretakers.</p>
+
+    <button class="btn-add">+ Add Health Record</button>
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Record ID</th>
+          <th>Pig ID</th>
+          <th>Condition</th>
+          <th>Treatment</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HR-001</td>
+          <td>101</td>
+          <td>Cough</td>
+          <td>Antibiotics</td>
+          <td>Ongoing</td>
+          <td>2025-09-08</td>
+          <td>
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

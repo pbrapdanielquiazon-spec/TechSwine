@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwineTech | Procurement Table</title>
+  <link rel="stylesheet" href="procurement.css">
+  <link rel="stylesheet" href="C:\Users\Ralph\OneDrive\Desktop\SwineTechv2\admin\admin.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">🐖 SwineTech</div>
+    <nav>
+      <a href="dashboard-procurement.html">Dashboard</a>
+      <a href="supplies-procurement.html">Supplies</a>
+      <a href="expenses-procurement.html" class="active">Expenses</a>
+      <a href="reports-procurement.html">Reports</a>
+      <a href="logout.php" class="btn-logout">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+<main class="dashboard">
+  <h1>Expenses (Procurement)</h1>
+  <button class="btn-add" onclick="openExpenseModal()">+ Add Expense</button>
+  <table class="admin-table">
+    <thead>
+      <tr>
+        <th>Expense ID</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Amount (₱)</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Bought vitamins for piglets</td>
+        <td>Medicine</td>
+        <td>₱3,000</td>
+        <td>2025-09-08</td>
+        <td><button class="btn-edit">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>
